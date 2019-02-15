@@ -2,14 +2,19 @@
 {% block title %}Lista{% endblock %}
 {% block content %}
     <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="card mx-4">
-            <div class="card-body p-4">
-                {% for p in cliente %}
+        {% for p in cliente %}
+            <div class="col-sm-6">
+              <div class="card mx-3">
+                <div class="card-body p-4">
                     <p>Nome: {{ p.nome }}</p>
                     <p>CPF: {{ p.cpf }}</p>
-                {% endfor %}
+                    <p>Telefone: {{ p.telefone }}</p>
+                    <p>Endereço: {{ p.endereco }}</p>
+                    <p>Email: {{ p.email }}</p>
+                    <p>Data: {{ p.data }}</p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+        {% endfor %}
+    </div>
 {% endblock %}
