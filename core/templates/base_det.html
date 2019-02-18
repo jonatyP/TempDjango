@@ -83,21 +83,23 @@
         <nav class="sidebar-nav">
           <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link" href="#" target="_top">
-                    <i class="nav-icon icon-star"></i> Exibir
-                </a>
-                <a class="nav-link" href="#" target="_top">
-                    <i class="nav-icon icon-star"></i> Editar
-                </a>
-                <a class="nav-link" href="#" target="_top">
-                    <i class="nav-icon icon-star"></i> Login
+                <a class="nav-link" href="/" target="_top">
+                    <i class="nav-icon icon-star"></i> Home
                 </a>
             </li>
 
-            <!--<li class="nav-item">
-                <a class="nav-link" href="register.html" target="_top">
-                    <i class="nav-icon icon-star"></i> Register</a>
-            </li>-->
+            <li class="nav-item">
+                <a class="nav-link" href="../../registro/" target="_top">
+                    <i class="nav-icon icon-star"></i> Cadastrar</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/reg/registro/?id={{ cliente.id }}" target="_top">
+                    <i class="nav-icon icon-star"></i> Editar</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/reg/delete/{{ cliente.id }}/" target="_top">
+                    <i class="nav-icon icon-star"></i> Excluir</a>
+            </li>
           </ul>
         </nav>
       </div>

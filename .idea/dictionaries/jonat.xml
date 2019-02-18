@@ -2,7 +2,12 @@
   <dictionary name="jonat">
     <words>
       <w>cliente</w>
+      <w>detalhe</w>
+      <w>detali</w>
+      <w>endereco</w>
       <w>passowrd</w>
+      <w>registros</w>
+      <w>telefone</w>
     </words>
   </dictionary>
 </component>

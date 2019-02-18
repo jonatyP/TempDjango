@@ -23,19 +23,12 @@ from core import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('reg/all/', views.list_all_reg, name='list_all_reg'),
+    path('reg/detali/<id>/', views.reg_detali, name='reg_detali'),
     path('login/', views.login_user, name='login_user'),
     path('login/submit', views.submit_login, name='submit_login'),
     path('logout/', views.logout_user, name='logout_user'),
-    path('registro/', views.registros),
+    path('reg/registro/', views.registros, name='registros'),
+    path('reg/registro/submit', views.set_cliente, name='set_cliente'),
+    path('reg/delete/<id>/', views.delet_cliente, name='delet_cliente'),
     path('', RedirectView.as_view(url='reg/all/')),
-
-    #path('login/', views.login_user),
-
-    #path('', views.home, name='home'),
-
-    #path('base.html', views.baseht, name='baseht'),
-    #
-
-    #url(r'admin/', admin.site.urls),
-    #url(r'', TemplateView.as_view(template_name='index.html')),
 ]

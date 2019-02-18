@@ -1,19 +1,17 @@
-{% extends "base1.html" %}
+{% extends "base_list.html" %}
 {% block title %}Lista{% endblock %}
 {% block content %}
     <div class="row justify-content-center">
-        {% for p in cliente %}
-            <div class="col-sm-6">
-              <div class="card mx-3">
-                <div class="card-body p-4">
-                    <p>Nome: {{ p.nome }}</p>
-                    <p>CPF: {{ p.cpf }}</p>
-                    <p>Telefone: {{ p.telefone }}</p>
-                    <p>Endereço: {{ p.endereco }}</p>
-                    <p>Email: {{ p.email }}</p>
-                    <p>Data: {{ p.data }}</p>
+        {% for c in cliente %}
+            <div class="col-sm-4">
+                <div class="card mx-3">
+                    <div class="card-body p-4">
+                        <p><span class="badge badge-secondary">Nome:</span> {{ c.nome }}</p>
+                        <a href="/reg/detali/{{ c.id }}/")>
+                            <p class="text-center">Detalhes...</p>
+                        </a>
+                    </div>
                 </div>
-              </div>
             </div>
         {% endfor %}
     </div>

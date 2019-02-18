@@ -65,25 +65,48 @@
           <a class="nav-link" href="#">Dashboard</a>
         </li>
       </ul>
-      <ul class="nav navbar-nav ml-auto">
-        <!--<span class="badge badge-pill badge-danger" href="#">
-           <i class="fa fa-lock"></i> Logout</span>-->
-      </ul>
-      <!--<button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">
-      </button>-->
+      <a href="/logout/" >
+          <ul class="nav navbar-nav ml-auto">
+              <span class="badge badge-pill badge-danger" href="/logout/">
+                  <i class="fa fa-lock">Logout</i>
+              </span>
+          </ul>
+      </a>
+
     <!-- FIM DO MENU HORIZONTAL -->
   </header>
 
     <!--  MENU VERTICAL -->
         <!-- COMEÇO DO CONTEN-->
     <div class="app-body">
+      <div class="sidebar">
+        <nav class="sidebar-nav">
+          <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../registro" target="_top">
+                    <i class="nav-icon icon-star"></i> Cadastrar
+                </a>
+            </li>
 
+            <!--<li class="nav-item">
+                <a class="nav-link" href="register.html" target="_top">
+                    <i class="nav-icon icon-star"></i> Register</a>
+            </li>-->
+          </ul>
+        </nav>
+      </div>
       <main class="main">
+       <ol class="breadcrumb">
+            <li class="nav-item px-1">
+                <p class="text-muted">Bem vindo! </p>
+            </li>
+        </ol>
         <div class="container-fluid">
           <div class="animated fadeIn">
 
             <div class="container">
                 {% block content %}
+
                 {% endblock %}
             </div>
           </div>
